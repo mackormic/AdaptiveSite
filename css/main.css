@@ -1,4 +1,5 @@
 @import "./reset.css";
+
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@400;500;600;700&display=swap');
 
 body {
@@ -68,6 +69,10 @@ a {
     color: #606060;
 }
 
+.nav-button {
+    display: none;
+}
+
 /*Header Block*/
 
 .header-block {
@@ -105,8 +110,12 @@ a {
 .services-row {
     display: flex;
     column-gap: 30px;
+    row-gap: 60px;
+    flex-wrap: wrap;
 }
 .services-card {
+    flex: 1 1 0;
+    min-width: 315px;
 }
 .services-card-img {
     margin-bottom: 30px;
